@@ -3,7 +3,8 @@ import cv2
 
 app = Flask(__name__)
 
-camera = cv2.VideoCapture(-1)  # use 0 for web camera
+camera = cv2.VideoCapture('cv2.CAP_V4L2')  # use 0 for web camera
+# camera = cv2.VideoCapture(-1)  # use 0 for web camera
 # camera = cv2.VideoCapture(0)  # use 0 for web camera
 # camera = cv2.VideoCapture('http://192.168.0.65:8080/video')  # use 0 for web camera
 # camera = cv2.VideoCapture('rtsp://freja.hiof.no:1935/rtplive/_definst_/hessdalen03.stream')  # use 0 for web camera
