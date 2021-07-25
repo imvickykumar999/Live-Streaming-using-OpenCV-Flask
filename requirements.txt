@@ -1,3 +1,4 @@
 opencv-python
 Response
-gunicorn
+gunicorn==20.1.0
+eventlet==0.30.2
