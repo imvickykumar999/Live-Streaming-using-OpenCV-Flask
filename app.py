@@ -35,10 +35,10 @@ def video_feed():
 @app.route('/')
 def index():
 
-    from pynput.mouse import Button, Controller
-    mouse = Controller()
-    mouse.position = (338, 170)
-    mouse.click(Button.left, 2)
+    # from pynput.mouse import Button, Controller
+    # mouse = Controller()
+    # mouse.position = (338, 170)
+    # mouse.click(Button.left, 2)
 
     """Video streaming home page."""
     return render_template('index.html')
